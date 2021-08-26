@@ -6,6 +6,6 @@ const {setupInput} = require('./input')
 // const port = 50542
 
 console.log("Connecting ...");
-connect();
+// connect();
 
-setupInput()
+setupInput(connect())
