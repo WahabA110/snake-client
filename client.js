@@ -18,9 +18,6 @@ const connect = function () {
   conn.on("connect", () => {
     console.log('Successfully connected to game server');
     conn.write('Name: WA')
-    // setInterval(() => {conn.write('Move: up')}, 300)
-    // setTimeout(() => {conn.write('Move: up')}, 750)
-    // setTimeout(() => {conn.write('Move: up')}, 1200)
   });
 
   return conn;
@@ -31,3 +28,9 @@ const connect = function () {
 module.exports = {
   connect
 };
+
+
+
+    // setInterval(() => {conn.write('Move: up')}, 300)
+    // setTimeout(() => {conn.write('Move: up')}, 750)
+    // setTimeout(() => {conn.write('Move: up')}, 1200)
